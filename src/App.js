@@ -55,7 +55,7 @@ function App() {
 
         // Llamada de api wather que me da los datos del clima segun la geolocalización de la llamada anterior
         let apiKey = '1ee34e413a434ee5448b1366b0a3d1f7';
-        const url = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`; // usamos un variable ciudad creada dentro del mismo usseEffet, no se usa estado global
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`; // usamos un variable ciudad creada dentro del mismo usseEffet, no se usa estado global
         const responseURl = await fetch(url);
 
 
